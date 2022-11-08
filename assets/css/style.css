@@ -1,0 +1,582 @@
+/*=== MEDIA QUERY ===*/
+@import url(http://fonts.googleapis.com/css?family=Montserrat:400,700|Poppins:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Hind:300,400,500,600,700);
+@import url(https://fonts.googleapis.com/css?family=Playfair+Display:300,400,500,600,700);
+html {
+  overflow-x: hidden;
+}
+body {
+  line-height: 1.5;
+  font-family: "Hind", serif;
+  -webkit-font-smoothing: antialiased;
+  font-size: 17px;
+  color: rgba(0, 0, 0, 0.65);
+  background: #3a3a3a url(https://cdn.battlemetrics.com/app/assets/main_bg.ea3e1.png);
+  background-size: contain;
+}
+hr {
+  width: 60%;
+}
+/* Paragraphs */
+p {
+  margin-top: 10px;
+  font-size: 12px;
+  font-family: sans-serif;
+  color: #fc7930ff;
+  text-align: right;
+}
+
+/* Links */
+a {
+  color: #242424;
+  text-decoration: none;
+}
+a:focus,
+a:hover {
+  font-weight: bold;
+  color: #8a0103;
+  text-decoration: none;
+}
+a:focus {
+  outline: none;
+}
+
+/* Background Video */
+#myVideo {
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 230%;
+  height: 230%;
+  z-index: -1;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+/* Track */
+::-webkit-scrollbar-track {
+  background: whitesmoke;
+  border-radius: 23px; 
+}
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #888; 
+}
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+/* Navigation Bar */
+.navbar-toggle .icon-bar {
+  background: #f75757;
+}
+#navbar {
+  background-image: url(https://c4.wallpaperflare.com/wallpaper/87/470/339/abstract-grunge-texture-old-wallpaper-preview.jpg);
+  background-size: contain;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+#navbar li {
+  padding-left: 15px;
+}
+#navbar .nav-link {
+  font-family: "Poppins", sans-serif;
+  font-weight: 500;
+  color: #fff;
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0.5px;
+  transition: all 0.25s ease;
+}
+#navbar .nav-link:hover,
+#navbar .nav-link:focus {
+  color: #7a0102;
+}
+#navbar .btn {
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+}
+.navbar-brand {
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+}
+.navbar-brand span {
+  color: #f75757;
+}
+nav {
+  margin-bottom: 10px;
+}
+.nav-posts-title {
+  line-height: 25px;
+  font-size: 18px;
+}
+.zlglogo {
+  width: 100%;
+  display: inline;
+  margin: 0 auto;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.zlglogo img {
+  width: 80%
+}
+.logo span {
+  color: #f75757;
+}
+
+/* Header */
+.header-top {
+  background: #222328;
+  color: #919194;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+.header-top .header-top-socials {
+  border-right: 1px solid rgba(255, 255, 255, 0.05);
+  padding: 12px 0px;
+}
+.header-top .header-top-socials a {
+  color: #919194;
+  margin-right: 15px;
+  font-size: 16px;
+}
+.header-top .header-top-info {
+  color: #919194;
+  font-size: 16px;
+}
+.header-top .header-top-info a span {
+  color: #fff;
+}
+.header-top .header-top-info a {
+  margin-left: 35px;
+  color: #919194;
+}
+
+/* Dropdown Menu */
+.dropbtn {
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+  height: 60px;
+}
+.dropbtn:hover, .dropbtn:focus {
+}
+.dropdown {
+  position: relative;
+  display: inline-block;
+  visibility: hidden;
+}
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f1f1f1;
+  min-width: 160px;
+  overflow: auto;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+.dropdown a:hover {background-color: #ddd;}
+
+.show {display: block;}
+/* Discord Button */
+.btn {
+  display: inline-block;
+  font-size: 14px;
+  font-size: 0.8125rem;
+  font-weight: 400;
+  padding: 1rem 2.5rem;
+  text-transform: uppercase;
+  border-radius: 0;
+  transition: all 0.2s ease;
+}
+.btn.btn-icon i {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.btn:focus {
+  outline: 0px;
+  border: 0px;
+  box-shadow: none;
+}
+.btn-main,
+.btn-transparent,
+.btn-small {
+  background: #f75757;
+  color: #fff;
+  transition: all 0.2s ease;
+}
+.btn-main:hover,
+.btn-transparent:hover,
+.btn-small:hover {
+  background: #dd0b0b;
+  color: #fff;
+}
+.btn-solid-border {
+  border: 2px solid #f8f7f7;
+  background: transparent;
+  color: #242424;
+}
+.btn-solid-border:hover {
+  border: 2px solid whitesmoke;
+  background: #7a0102;
+}
+.btn-transparent {
+  background: transparent;
+  padding: 0;
+  color: #f75757;
+}
+.btn-transparent:hover {
+  background: transparent;
+  color: #f75757;
+}
+.btn-large {
+  padding: 20px 45px;
+}
+.btn-large.btn-icon i {
+  font-size: 16px;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+.btn-small {
+  padding: 10px 25px;
+  font-size: 12px;
+}
+.btn-round {
+  border-radius: 4px;
+}
+.btn-round-full {
+  border-radius: 50px;
+}
+.btn.active:focus,
+.btn:active:focus,
+.btn:focus {
+  outline: 0;
+}
+.bg-gray {
+  background: #f5f8f9;
+}
+.bg-primary {
+  background: #f75757;
+}
+.bg-primary-dark {
+  background: #f52626;
+}
+.bg-primary-darker {
+  background: #dd0b0b;
+}
+.bg-dark {
+  background: #242424;
+}
+.bg-gradient {
+  background-image: linear-gradient(
+    145deg,
+    rgba(19, 177, 205, 0.95) 0%,
+    rgba(152, 119, 234, 0.95) 100%
+  );
+  background-repeat: repeat-x;
+}
+
+/* Text */
+.text-color {
+  color: #f75757;
+}
+.text-black {
+  color: #242424;
+}
+.text-color2 {
+  color: #c54041;
+}
+.text-color2 {
+  color: #b99769;
+}
+.text-sm {
+  font-size: 14px;
+}
+.text-md {
+  font-size: 2.25rem;
+}
+.text-lg {
+  font-size: 3.75rem;
+}
+.no-spacing {
+  letter-spacing: 0px;
+}
+
+/* Main Container */
+.servercontainer {
+  display: block;
+  background-color: rgb(0, 0, 0, .6);
+  width: 55%;
+  margin: 0 auto;
+  border-radius: 10px;
+  height: 100%;
+}
+.zombielynxserverstatus {
+  margin: 0 auto;
+  text-align: center;
+  width: 50%;
+}
+.zombielynxserverstatus img {
+  margin: 20px 0 10px 0;
+  width: 100%;
+}
+.gamemodes {
+  margin: 0 auto;
+  text-align: center;
+  width: 20%;
+}
+.gamemodes img {
+  margin: 20px 0 10px 0;
+  width: 50%;
+}
+.gameimages {
+  width: 20%;
+  margin: 10px 20px;
+}
+
+/* Server Row */
+.bannerrow {
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
+  justify-content: center;
+}
+/* Banner */
+.serverbox {
+  display: block;
+  margin: 10px 5px;
+  width: 40%;
+  height: 100%;
+}
+.servername {
+  height: 30px;
+  margin: 0 auto;
+}
+.serverstatusblock {
+  background: linear-gradient(rgba(19, 18, 18, 0.3), rgba(19, 18, 18, 0.3)),
+    url(https://c4.wallpaperflare.com/wallpaper/87/470/339/abstract-grunge-texture-old-wallpaper-preview.jpg);
+  background-size: contain;
+  display: block;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #171816;
+  padding: 5px;
+  margin: 0px auto;
+  width: 100%;
+  height: 100%;
+  border: 1px solid #514e4a;
+  border-radius: 7px;
+}
+.serverstatusblock a {
+  height: 30%;
+}
+.serverstatusblock a:link {
+  text-decoration: none;
+}
+.bannerblockcontainer {
+  display: inline-block;
+  width: 100%;
+  margin-bottom: 5px;
+  border-radius: 3px;
+}
+.bannerblock {
+  width: 100%;
+  display: block;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding: 0 5px;
+}
+.bannerimg{
+  width: 100%;
+  height: 100%;
+  border: 1px solid #514e4a;
+  margin: 0;
+}
+.voteandjoin {
+  display: flex;
+  justify-content: space-between;
+  width: 98%;
+  margin: 0 auto;
+  /* border: 1px solid green; */
+}
+.joinbtn, .votebtn {
+  display: inline;
+  color: white;
+  height: 35px;
+}
+.joinbtn:hover, .votebtn:hover {
+  transform: translateY(2px);
+}
+.joinbtn a,
+.joinbtn a:visited,
+.votebtn a,
+.votebtn a:visited {
+  text-decoration: none;
+  color: white;
+}
+
+/* Footer */
+footer {
+  margin-top: 10px;
+}
+.footer {
+  padding-bottom: 10px;
+}
+.footer .copyright a {
+  font-weight: 600;
+}
+.footer-btm {
+  border-top: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+.footer-socials li a {
+  margin-left: 15px;
+}
+
+.small-display {
+  display: none;
+  color: white;
+}
+
+/* === MEDIA QUERY ===*/
+
+/* Desktop */
+@media screen and (max-width: 1919px) {
+  .joinbtn {
+    display: none;
+  }
+  .voteandjoin {
+    margin: 0 auto;
+    justify-content: space-between;
+  }
+  .servername {
+    margin: 0 0 0 auto;
+  }
+}
+@media screen and (min-width: 1024px) {
+  .servercontainer {
+    width: 55% ;
+  }
+  #myVideo {
+    height: 240%;
+  }
+}
+/* Tablet */
+@media screen and (min-width: 768px) and (max-width: 1023px) {
+  .servercontainer {
+    width: 95% ;
+  }
+  #myVideo {
+    display: none;
+  }
+  .dropdown {
+    display: inline-block;
+    visibility: visible;
+  }
+  ul {
+    display: none;
+  }
+  .collapse form {
+    display: none;
+  }
+  .navbar-nav li {
+    display: none;
+  }
+  .dropdown {
+    position: absolute;
+  }
+  .container {
+    width: 90%;
+  }
+  .zlglogo {
+    margin: 0 auto;
+    width: 90%;
+  }
+  .zlglogo img {
+    height: 10%;
+  }
+  .dropdown-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+/* Smartphone */
+@media screen and (max-width: 767px) {
+  html, body {
+    width: 100%;
+  }
+  .servercontainer {
+    width: 90% ;
+  }
+  .dropdown {
+    display: inline-block;
+    visibility: visible;
+    position: absolute;
+  }
+  ul {
+    display: none;
+  }
+  .collapse form {
+    display: none;
+  }
+  .navbar-nav li {
+    display: none;
+  }
+  #myVideo {
+    display: none;
+  }
+  .serverbox {
+    width: 50%;
+  }
+  .votebtn {
+    display: none;
+  }
+  .servername {
+    margin: 0 auto;
+    margin-top: 5px;
+    height: 20px;
+  }
+  .serverstatusblock {
+    width: 100%;
+  }
+  .bannerblock {
+    width: 100%;
+    padding: 0px;
+  }
+  .bannerblockcontainer {
+    margin: 0px;
+  }
+  .servercontainer h2 {
+    margin-top: 5px;
+    width: 90%;
+  }
+  .zlglogo {
+    margin: 0 auto;
+    width: 70%;
+  }
+  .zlglogo img {
+    height: 10%;
+  }
+  .dropdown-text {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+# sourceMappingURL=maps/style.css.map
+
+
+

@@ -9,6 +9,7 @@ body, html, section {
   color: #FE842C;
 }
 a {
+  text-decoration: none;
   color: white;
 }
 .empyrionServer, .mods {
